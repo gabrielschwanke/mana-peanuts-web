@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maná Peanuts | Cardápio Online</title>
+  <meta
+    name="description"
+    content="Cardápio online da Maná Peanuts com carrinho lateral e finalização de pedido via WhatsApp."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="topbar" id="inicio">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="Maná Peanuts">
+        <img
+          src="assets/img/logomana.png"
+          alt="Logo Maná Peanuts"
+          class="brand-logo"
+        />
+      </a>
+
+      <nav class="menu-desktop" aria-label="Menu principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#pedido">Pedido</a>
+        <a href="#informacoes">Informações</a>
+      </nav>
+
+      <a href="#pedido" class="cart-button" aria-label="Ir para o pedido">
+        <span>🛒</span>
+        <strong id="cartCountHeader">0</strong>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--compact">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal-up">
+          <span class="eyebrow">Natural • Rústico • Premium</span>
+          <h1>Monte seu pedido online da Maná Peanuts</h1>
+          <p>
+            Escolha os produtos por categoria, revise seu pedido no carrinho lateral
+            e finalize tudo no WhatsApp.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cardapio">Ver cardápio</a>
+            <a class="btn btn-secondary" href="#pedido">Ir para o pedido</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal-scale">
+          <img
+            src="https://www.genspark.ai/api/files/s/uKVm9BHX"
+            alt="Linha tradicional e linha sabores da Maná Peanuts"
+          />
+          <div class="floating-badge">Linha Tradicional + Sabores</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Cardápio</span>
+          <h2>Escolha sua categoria</h2>
+          <p>
+            Produtos organizados por linha para facilitar a navegação e o pedido.
+          </p>
+        </div>
+
+        <div class="category-tabs reveal-up delay-1" id="categorias">
+          <button class="category-tab active" data-filter="todos" type="button">
+            Todos
+          </button>
+
+          <button class="category-tab" data-filter="linha-tradicional" type="button">
+            Linha Tradicional
+          </button>
+
+          <button class="category-tab" data-filter="linha-sabores" type="button">
+            Linha Sabores
+          </button>
+
+          <button class="category-tab" data-filter="linha-doces" type="button">
+            Linha Doces
+          </button>
+
+          <button class="category-tab" data-filter="linha-granel" type="button">
+            Linha Granel
+          </button>
+        </div>
+
+        <div class="menu-layout">
+          <!-- CARRINHO À ESQUERDA -->
+          <aside class="order-box" id="pedido">
+            <header class="order-box__header">
+              <div>
+                <h3>Seu pedido</h3>
+                <p>Preencha seus dados, revise os itens e finalize no WhatsApp.</p>
+              </div>
+
+              <span class="cart-badge">
+                <strong id="cartCount">0</strong> item(ns)
+              </span>
+            </header>
+
+            <form id="orderForm" class="order-form" onsubmit="return false;">
+              <div class="form-group">
+                <label for="customerName">Seu nome</label>
+                <input
+                  class="input"
+                  id="customerName"
+                  type="text"
+                  placeholder="Ex.: Gabriel"
+                />
+              </div>
+
+              <div class="form-group" id="addressGroup">
+                <label for="customerAddress">Bairro / endereço</label>
+                <input
+                  class="input"
+                  id="customerAddress"
+                  type="text"
+                  placeholder="Ex.: Centro, Rua X, nº 123"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="orderType">Tipo do pedido</label>
+                  <select class="input" id="orderType">
+                    <option value="Delivery" selected>Delivery</option>
+                    <option value="Retirada">Retirada</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="paymentMethod">Forma de pagamento</label>
+                  <select class="input" id="paymentMethod">
+                    <option value="Pix" selected>Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Cartão">Cartão</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group hidden" id="changeAmountGroup">
+                <label for="changeAmount">Troco para quanto?</label>
+                <input
+                  class="input"
+                  id="changeAmount"
+                  type="text"
+                  placeholder="Ex.: 100"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="orderNotes">Observações</label>
+                <textarea
+                  class="textarea"
+                  id="orderNotes"
+                  placeholder="Ex.: Quero os itens bem embalados."
+                ></textarea>
+              </div>
+            </form>
+
+            <div class="cart-items" id="cartItems" aria-live="polite">
+              <div class="empty-state">
+                <span class="empty-icon">🥜</span>
+                <p>Seu pedido está vazio.</p>
+                <small>Adicione um item para começar.</small>
+              </div>
+            </div>
+
+            <div class="summary">
+              <div class="summary__row">
+                <span>Subtotal</span>
+                <strong id="orderSubtotal">R$ 0,00</strong>
+              </div>
+
+              <div class="summary__row hidden" id="deliveryFeeRow">
+                <span>Taxa de entrega</span>
+                <strong id="deliveryFeeValue">R$ 0,00</strong>
+              </div>
+
+              <div class="summary__row summary__row--total">
+                <span>Total</span>
+                <strong id="orderTotal">R$ 0,00</strong>
+              </div>
+            </div>
+
+            <div class="order-actions">
+              <button class="btn btn--whatsapp" id="checkoutBtn" type="button">
+                Finalizar no WhatsApp
+              </button>
+
+              <button class="btn btn--secondary" id="clearCartBtn" type="button">
+                Limpar pedido
+              </button>
+            </div>
+          </aside>
+
+          <!-- PRODUTOS À DIREITA -->
+          <div class="products-panel">
+            <div class="products-panel__header">
+              <div>
+                <span class="section-tag">Produtos</span>
+                <h2>Cardápio Maná Peanuts</h2>
+              </div>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section" id="informacoes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Informações</span>
+          <h2>Pedido rápido e organizado</h2>
+          <p>
+            Você pode usar esse layout para destacar as linhas da Maná Peanuts e
+            simplificar o fechamento do pedido no WhatsApp.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template id="productCardTemplate">
+    <article class="product-card reveal-up" data-category="">
+      <div class="product-image-wrap">
+        <img
+          class="product-image"
+          src=""
+          alt=""
+          loading="lazy"
+        />
+        <span class="product-badge"></span>
+      </div>
+
+      <div class="product-body">
+        <div class="product-top">
+          <h3 class="product-title"></h3>
+          <strong class="product-price"></strong>
+        </div>
+
+        <p class="product-description"></p>
+
+        <div class="product-footer">
+          <span class="product-weight"></span>
+          <button class="btn btn-add" type="button">Adicionar ao pedido</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
