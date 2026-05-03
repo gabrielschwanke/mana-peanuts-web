@@ -6,38 +6,38 @@
   --color-accent: #9CAD3A;
   --color-accent-2: #C9D85E;
 
-  /* Base clara da marca */
-  --color-bg: #F4EFE5;
-  --color-surface: #FFFDF8;
-  --color-surface-2: #EFE5D4;
+  /* Base clara */
+  --color-bg: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F8F3EC;
 
-  /* Tons escuros inspirados na referência */
+  /* Tons auxiliares */
   --color-dark: #1E120C;
   --color-dark-2: #24160F;
   --color-dark-3: #2C1B12;
   --color-dark-4: #3A2518;
 
   /* Texto */
-  --color-text: #F8F0E5;
-  --color-text-dark: #4A2B12;
-  --color-text-soft: #D7C3AE;
-  --color-text-muted: #AE9279;
+  --color-text: #4A2B12;
+  --color-text-dark: #2F1A0D;
+  --color-text-soft: #7A654F;
+  --color-text-muted: #A18D77;
 
   /* UI */
-  --color-border: rgba(201, 216, 94, 0.10);
-  --color-border-strong: rgba(181, 116, 48, 0.30);
+  --color-border: rgba(129, 80, 30, 0.12);
+  --color-border-strong: rgba(129, 80, 30, 0.22);
   --color-white: #FFFFFF;
   --color-danger: #E46B5D;
   --color-success: #31A85A;
 
   /* Gradientes */
   --gradient-main: linear-gradient(135deg, #81501E 0%, #9C622A 100%);
-  --gradient-soft: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  --gradient-soft: linear-gradient(180deg, #FFFFFF 0%, #F8F3EC 100%);
   --gradient-accent: linear-gradient(135deg, #8BA132 0%, #AABD44 100%);
   --gradient-page:
-    radial-gradient(circle at top left, rgba(156, 173, 58, 0.08), transparent 26%),
-    radial-gradient(circle at bottom right, rgba(156, 173, 58, 0.05), transparent 24%),
-    linear-gradient(180deg, #1C110B 0%, #24160F 100%);
+    radial-gradient(circle at top left, rgba(156, 173, 58, 0.08), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(129, 80, 30, 0.05), transparent 24%),
+    #FFFFFF;
 
   /* Bordas e medidas */
   --radius-xl: 26px;
@@ -53,10 +53,11 @@
   --transition: 280ms ease;
   --transition-slow: 480ms ease;
 
-  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.20);
-  --shadow-md: 0 16px 36px rgba(0, 0, 0, 0.28);
-  --shadow-lg: 0 22px 46px rgba(0, 0, 0, 0.34);
+  --shadow-soft: 0 8px 20px rgba(129, 80, 30, 0.08);
+  --shadow-md: 0 12px 28px rgba(129, 80, 30, 0.10);
+  --shadow-lg: 0 18px 36px rgba(129, 80, 30, 0.12);
 }
+
 
 /* RESET */
 *,
@@ -146,8 +147,8 @@ textarea {
   z-index: 50;
   min-height: var(--topbar-height);
   backdrop-filter: blur(14px);
-  background: rgba(24, 14, 10, 0.82);
-  border-bottom: 1px solid rgba(181, 116, 48, 0.16);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(129, 80, 30, 0.12);
 }
 
 .nav {
@@ -185,12 +186,12 @@ textarea {
   position: relative;
   font-size: 0.96rem;
   font-weight: 700;
-  color: var(--color-text-soft);
+  color: var(--color-text);
   transition: color var(--transition-fast);
 }
 
 .menu-desktop a:hover {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .menu-desktop a::after {
@@ -218,9 +219,9 @@ textarea {
   min-width: 82px;
   padding: 0.82rem 1rem;
   border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--color-white);
-  border: 1px solid rgba(181, 116, 48, 0.22);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border: 1px solid rgba(129, 80, 30, 0.16);
   box-shadow: var(--shadow-soft);
   font-weight: 800;
   transition: transform var(--transition), background var(--transition), border-color var(--transition);
@@ -228,9 +229,10 @@ textarea {
 
 .cart-button:hover {
   transform: translateY(-2px);
-  background: rgba(181, 116, 48, 0.12);
-  border-color: rgba(201, 216, 94, 0.28);
+  background: rgba(129, 80, 30, 0.05);
+  border-color: rgba(129, 80, 30, 0.25);
 }
+
 
 /* TIPOGRAFIA */
 .hero h1,
@@ -257,10 +259,11 @@ textarea {
 
 .eyebrow,
 .section-tag {
-  color: #F4E8D8;
+  color: var(--color-primary);
   background: rgba(156, 173, 58, 0.14);
-  border: 1px solid rgba(201, 216, 94, 0.10);
+  border: 1px solid rgba(156, 173, 58, 0.18);
 }
+
 
 /* HERO */
 .hero {
@@ -286,8 +289,9 @@ textarea {
   margin: 1rem 0 0.8rem;
   font-size: clamp(2.3rem, 4vw, 4rem);
   line-height: 0.96;
-  color: var(--color-white);
+  color: var(--color-text-dark);
 }
+
 
 .hero p,
 .section-heading p,
@@ -429,8 +433,9 @@ textarea {
   margin: 0.6rem 0 0.35rem;
   font-size: clamp(1.9rem, 2.5vw, 2.8rem);
   line-height: 1;
-  color: var(--color-white);
+  color: var(--color-text-dark);
 }
+
 
 /* TABS */
 .category-tabs {
@@ -443,16 +448,12 @@ textarea {
 .category-tab {
   padding: 0.82rem 1rem;
   border-radius: var(--radius-pill);
-  color: #F0DCC5;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(181, 116, 48, 0.18);
+  color: var(--color-primary);
+  background: var(--color-surface);
+  border: 1px solid rgba(129, 80, 30, 0.14);
   font-weight: 800;
-  transition:
-    transform var(--transition),
-    background var(--transition),
-    color var(--transition),
-    border-color var(--transition);
 }
+
 
 .category-tab:hover {
   transform: translateY(-2px);
@@ -470,17 +471,24 @@ textarea {
 /* LAYOUT PRINCIPAL */
 .menu-layout {
   display: grid;
-  grid-template-columns: 420px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 420px;
+  grid-template-areas: "products cart";
   gap: 1.4rem;
   align-items: start;
 }
+
+.products-panel {
+  grid-area: products;
+  min-width: 0;
+}
+
 
 /* CARRINHO / PEDIDO */
 .order-box {
   position: sticky;
   top: calc(var(--topbar-height) + 1rem);
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-  border: 1px solid rgba(181, 116, 48, 0.20);
+  background: var(--color-surface);
+  border: 1px solid rgba(129, 80, 30, 0.14);
   border-radius: 24px;
   padding: 1rem;
   box-shadow: var(--shadow-lg);
@@ -498,7 +506,7 @@ textarea {
   margin: 0;
   font-size: 2rem;
   line-height: 1;
-  color: #FFD98D;
+  color: var(--color-primary);
 }
 
 .order-box__header p {
@@ -543,7 +551,7 @@ textarea {
 .form-group label {
   font-size: 0.88rem;
   font-weight: 700;
-  color: #E8D1BA;
+  color: var(--color-text-dark);
 }
 
 .input,
@@ -555,7 +563,7 @@ select.input {
   border-radius: 14px;
   border: 1px solid rgba(181, 116, 48, 0.18);
   background: rgba(255,255,255,0.04);
-  color: var(--color-white);
+  color: var(--color-text-dark);
   outline: none;
   transition:
     border-color var(--transition),
@@ -634,7 +642,7 @@ select.input:focus {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.2;
-  color: var(--color-white);
+  color: var(--color-text-dark);
 }
 
 .cart-item__meta,
@@ -696,7 +704,7 @@ select.input:focus {
 
 .empty-state p {
   margin: 0;
-  color: var(--color-white);
+  color: var(--color-text-dark);
   font-weight: 700;
 }
 
@@ -720,12 +728,12 @@ select.input:focus {
 }
 
 .summary__row strong {
-  color: #FFF0D3;
+  color: var(--color-text-dark);
 }
 
 .summary__row--total span,
 .summary__row--total strong {
-  color: #FFD98D;
+  color: var(--color-primary);
   font-size: 1.12rem;
   font-weight: 900;
 }
@@ -758,8 +766,8 @@ select.input:focus {
 .product-card {
   overflow: hidden;
   border-radius: 20px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-  border: 1px solid rgba(181, 116, 48, 0.20);
+  background: var(--color-surface);
+  border: 1px solid rgba(129, 80, 30, 0.14);
   box-shadow: var(--shadow-md);
   transition:
     transform var(--transition),
@@ -767,6 +775,7 @@ select.input:focus {
     border-color var(--transition),
     background var(--transition);
 }
+
 
 .product-card:hover {
   transform: translateY(-6px);
@@ -776,20 +785,25 @@ select.input:focus {
 
 .product-image-wrap {
   position: relative;
-  aspect-ratio: 1 / 0.78;
-  padding: 0.9rem;
-  background: linear-gradient(180deg, #18110D 0%, #130D09 100%);
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  background: linear-gradient(180deg, #FFFDF8 0%, #F8F3EC 100%);
   border-bottom: 1px solid rgba(181, 116, 48, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   border-radius: 14px;
-  background: rgba(255,255,255,0.03);
+  background: transparent;
   transition: transform var(--transition-slow);
 }
+
 
 .product-card:hover .product-image {
   transform: scale(1.03);
@@ -799,9 +813,9 @@ select.input:focus {
   position: absolute;
   left: 1rem;
   bottom: 1rem;
-  color: #F4E6D6;
-  background: rgba(129, 80, 30, 0.88);
-  border: 1px solid rgba(201, 216, 94, 0.08);
+  color: var(--color-white);
+  background: var(--color-primary);
+  border: 1px solid rgba(129, 80, 30, 0.14);
 }
 
 .product-body {
@@ -821,14 +835,14 @@ select.input:focus {
   margin: 0;
   font-size: 1.12rem;
   line-height: 1.2;
-  color: var(--color-white);
+  color: var(--color-text-dark);
 }
 
 .product-price {
   white-space: nowrap;
   font-size: 1.18rem;
   font-weight: 900;
-  color: #FFD98D;
+  color: var(--color-primary);
 }
 
 .product-description {

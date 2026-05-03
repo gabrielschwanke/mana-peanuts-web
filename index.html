@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maná Peanuts</title>
-  <meta
-    name="description"
-    content="Cardápio online da Maná Peanuts com carrinho lateral e finalização de pedido via WhatsApp."
-  />
+  <meta name="description" content="Cardápio online da Maná Peanuts com carrinho lateral e finalização de pedido via WhatsApp." />
   <link rel="icon" type="image/png" href="assets/icons/mascotemana.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <div class="bg-orb orb-1"></div>
   <div class="bg-orb orb-2"></div>
@@ -26,11 +22,7 @@
   <header class="topbar" id="inicio">
     <div class="container nav">
       <a href="#inicio" class="brand" aria-label="Maná Peanuts">
-        <img
-          src="assets/img/logomana.png"
-          alt="Logo Maná Peanuts"
-          class="brand-logo"
-        />
+        <img src="assets/img/logomana.png" alt="Logo Maná Peanuts" class="brand-logo" />
       </a>
 
       <nav class="menu-desktop" aria-label="Menu principal">
@@ -58,25 +50,17 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#cardapio">Ver cardápio</a>
+            <a class="btn btn-primary" href="#cardapio">Ver produtos</a>
             <a class="btn btn-secondary" href="#pedido">Ir para o pedido</a>
           </div>
         </div>
 
-        <div class="hero-card reveal-scale">
-          <img
-            src="https://www.genspark.ai/api/files/s/uKVm9BHX"
-            alt="Linha tradicional e linha sabores da Maná Peanuts"
-          />
-          <div class="floating-badge">Linha Tradicional + Sabores</div>
-        </div>
       </div>
     </section>
 
     <section class="menu-section" id="cardapio">
       <div class="container">
         <div class="section-heading reveal-up">
-          <span class="section-tag">Cardápio</span>
           <h2>Escolha sua categoria</h2>
           <p>
             Produtos organizados por linha para facilitar a navegação e o pedido.
@@ -84,11 +68,8 @@
         </div>
 
         <div class="category-tabs reveal-up delay-1" id="categorias">
-          <button class="category-tab active" data-filter="todos" type="button">
-            Todos
-          </button>
 
-          <button class="category-tab" data-filter="linha-tradicional" type="button">
+          <button class="category-tab active" data-filter="linha-tradicional" type="button">
             Linha Tradicional
           </button>
 
@@ -106,7 +87,7 @@
         </div>
 
         <div class="menu-layout">
-          <!-- CARRINHO À ESQUERDA -->
+          <!-- CARRINHO -->
           <aside class="order-box" id="pedido">
             <header class="order-box__header">
               <div>
@@ -122,22 +103,12 @@
             <form id="orderForm" class="order-form" onsubmit="return false;">
               <div class="form-group">
                 <label for="customerName">Seu nome</label>
-                <input
-                  class="input"
-                  id="customerName"
-                  type="text"
-                  placeholder="Ex.: Gabriel"
-                />
+                <input class="input" id="customerName" type="text" placeholder="Ex.: Gabriel" />
               </div>
 
               <div class="form-group" id="addressGroup">
                 <label for="customerAddress">Bairro / endereço</label>
-                <input
-                  class="input"
-                  id="customerAddress"
-                  type="text"
-                  placeholder="Ex.: Centro, Rua X, nº 123"
-                />
+                <input class="input" id="customerAddress" type="text" placeholder="Ex.: Centro, Rua X, nº 123" />
               </div>
 
               <div class="form-row">
@@ -161,21 +132,12 @@
 
               <div class="form-group hidden" id="changeAmountGroup">
                 <label for="changeAmount">Troco para quanto?</label>
-                <input
-                  class="input"
-                  id="changeAmount"
-                  type="text"
-                  placeholder="Ex.: 100"
-                />
+                <input class="input" id="changeAmount" type="text" placeholder="Ex.: 100" />
               </div>
 
               <div class="form-group">
                 <label for="orderNotes">Observações</label>
-                <textarea
-                  class="textarea"
-                  id="orderNotes"
-                  placeholder="Ex.: Quero os itens bem embalados."
-                ></textarea>
+                <textarea class="textarea" id="orderNotes" placeholder="Ex.: Quero os itens bem embalados."></textarea>
               </div>
             </form>
 
@@ -219,7 +181,6 @@
           <div class="products-panel">
             <div class="products-panel__header">
               <div>
-                <span class="section-tag">Produtos</span>
                 <h2>Cardápio Maná Peanuts</h2>
               </div>
             </div>
@@ -247,12 +208,7 @@
   <template id="productCardTemplate">
     <article class="product-card reveal-up" data-category="">
       <div class="product-image-wrap">
-        <img
-          class="product-image"
-          src=""
-          alt=""
-          loading="lazy"
-        />
+        <img class="product-image" src="" alt="" loading="lazy" />
         <span class="product-badge"></span>
       </div>
 
@@ -272,6 +228,7 @@
     </article>
   </template>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
