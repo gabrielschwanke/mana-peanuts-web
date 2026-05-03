@@ -19,9 +19,10 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "300g",
-    price: 14.90,
+    price: 14.9,
     image: "",
-    description: "Amendoim torrado tradicional da Maná Peanuts, ideal para consumo e revenda."
+    description:
+      "Amendoim torrado tradicional da Maná Peanuts, ideal para consumo e revenda.",
   },
   {
     id: 2,
@@ -29,9 +30,9 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "300g",
-    price: 14.90,
+    price: 14.9,
     image: "",
-    description: "Amendoim doce com sabor marcante e textura crocante."
+    description: "Amendoim doce com sabor marcante e textura crocante.",
   },
   {
     id: 3,
@@ -39,9 +40,10 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "300g",
-    price: 15.90,
+    price: 15.9,
     image: "",
-    description: "Versão especial com sal rosa, equilibrando sabor e crocância."
+    description:
+      "Versão especial com sal rosa, equilibrando sabor e crocância.",
   },
   {
     id: 4,
@@ -49,9 +51,9 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "400g",
-    price: 17.90,
+    price: 17.9,
     image: "",
-    description: "Ideal para receitas, coberturas, recheios e uso culinário."
+    description: "Ideal para receitas, coberturas, recheios e uso culinário.",
   },
   {
     id: 5,
@@ -59,9 +61,9 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "400g",
-    price: 17.90,
+    price: 17.9,
     image: "",
-    description: "Perfeito para preparos, doces e composições artesanais."
+    description: "Perfeito para preparos, doces e composições artesanais.",
   },
 
   // LINHA SABORES
@@ -71,9 +73,9 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.90,
+    price: 16.9,
     image: "",
-    description: "Amendoim crocante com tempero sabor churrasco."
+    description: "Amendoim crocante com tempero sabor churrasco.",
   },
   {
     id: 7,
@@ -81,9 +83,9 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.90,
+    price: 16.9,
     image: "",
-    description: "Versão temperada com toque picante e marcante."
+    description: "Versão temperada com toque picante e marcante.",
   },
   {
     id: 8,
@@ -91,9 +93,9 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.90,
+    price: 16.9,
     image: "",
-    description: "Sabor intenso e defumado, ótimo para petiscos e revenda."
+    description: "Sabor intenso e defumado, ótimo para petiscos e revenda.",
   },
   {
     id: 9,
@@ -101,9 +103,9 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.90,
+    price: 16.9,
     image: "",
-    description: "Combinação agridoce com perfil de sabor diferenciado."
+    description: "Combinação agridoce com perfil de sabor diferenciado.",
   },
   {
     id: 10,
@@ -111,9 +113,10 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.90,
+    price: 16.9,
     image: "",
-    description: "Tempero clássico e equilibrado para quem gosta de sabor suave."
+    description:
+      "Tempero clássico e equilibrado para quem gosta de sabor suave.",
   },
 
   // LINHA DOCES
@@ -123,9 +126,9 @@ const products = [
     category: "linha-doces",
     badge: "doces",
     weight: "42g",
-    price: 4.90,
+    price: 4.9,
     image: "",
-    description: "Doce prático e saboroso, ideal para consumo rápido."
+    description: "Doce prático e saboroso, ideal para consumo rápido.",
   },
   {
     id: 12,
@@ -133,9 +136,9 @@ const products = [
     category: "linha-doces",
     badge: "doces",
     weight: "51g",
-    price: 5.90,
+    price: 5.9,
     image: "",
-    description: "Doce tradicional com textura firme e sabor artesanal."
+    description: "Doce tradicional com textura firme e sabor artesanal.",
   },
 
   // LINHA GRANEL
@@ -147,7 +150,8 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Produto vendido sob consulta, ideal para revenda e uso industrial."
+    description:
+      "Produto vendido sob consulta, ideal para revenda e uso industrial.",
   },
   {
     id: 14,
@@ -157,7 +161,8 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Opção para processos, receitas e comercialização em maior volume."
+    description:
+      "Opção para processos, receitas e comercialização em maior volume.",
   },
   {
     id: 15,
@@ -167,7 +172,7 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Ideal para doces, recheios e preparações artesanais."
+    description: "Ideal para doces, recheios e preparações artesanais.",
   },
   {
     id: 16,
@@ -177,7 +182,7 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Versão granel para revenda ou compra em maior quantidade."
+    description: "Versão granel para revenda ou compra em maior quantidade.",
   },
   {
     id: 17,
@@ -187,7 +192,7 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Indicado para confeitaria, panificação e produção."
+    description: "Indicado para confeitaria, panificação e produção.",
   },
   {
     id: 18,
@@ -197,7 +202,7 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Produto sob consulta para uso culinário e comercial."
+    description: "Produto sob consulta para uso culinário e comercial.",
   },
   {
     id: 19,
@@ -207,7 +212,7 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Versão em maior volume para atender pedidos sob demanda."
+    description: "Versão em maior volume para atender pedidos sob demanda.",
   },
   {
     id: 20,
@@ -217,8 +222,9 @@ const products = [
     weight: "Granel",
     price: 0,
     image: "",
-    description: "Opção versátil para receitas, misturas e produção alimentícia."
-  }
+    description:
+      "Opção versátil para receitas, misturas e produção alimentícia.",
+  },
 ];
 
 const state = {
@@ -226,28 +232,30 @@ const state = {
   cart: loadCart(),
 };
 
-const els = {
-  productGrid: document.getElementById("productGrid"),
-  productTemplate: document.getElementById("productCardTemplate"),
-  cartItems: document.getElementById("cartItems"),
-  cartCount: document.getElementById("cartCount"),
-  cartCountHeader: document.getElementById("cartCountHeader"),
-  orderSubtotal: document.getElementById("orderSubtotal"),
-  orderTotal: document.getElementById("orderTotal"),
-  deliveryFeeRow: document.getElementById("deliveryFeeRow"),
-  deliveryFeeValue: document.getElementById("deliveryFeeValue"),
-  clearCartBtn: document.getElementById("clearCartBtn"),
-  checkoutBtn: document.getElementById("checkoutBtn"),
-  orderType: document.getElementById("orderType"),
-  paymentMethod: document.getElementById("paymentMethod"),
-  changeAmountGroup: document.getElementById("changeAmountGroup"),
-  changeAmount: document.getElementById("changeAmount"),
-  customerName: document.getElementById("customerName"),
-  customerAddress: document.getElementById("customerAddress"),
-  addressGroup: document.getElementById("addressGroup"),
-  orderNotes: document.getElementById("orderNotes"),
-  categoryTabs: document.querySelectorAll(".category-tab"),
-};
+const els = {};
+
+function cacheElements() {
+  els.productGrid = document.getElementById("productGrid");
+  els.productTemplate = document.getElementById("productCardTemplate");
+  els.cartItems = document.getElementById("cartItems");
+  els.cartCount = document.getElementById("cartCount");
+  els.cartCountHeader = document.getElementById("cartCountHeader");
+  els.orderSubtotal = document.getElementById("orderSubtotal");
+  els.orderTotal = document.getElementById("orderTotal");
+  els.deliveryFeeRow = document.getElementById("deliveryFeeRow");
+  els.deliveryFeeValue = document.getElementById("deliveryFeeValue");
+  els.clearCartBtn = document.getElementById("clearCartBtn");
+  els.checkoutBtn = document.getElementById("checkoutBtn");
+  els.orderType = document.getElementById("orderType");
+  els.paymentMethod = document.getElementById("paymentMethod");
+  els.changeAmountGroup = document.getElementById("changeAmountGroup");
+  els.changeAmount = document.getElementById("changeAmount");
+  els.customerName = document.getElementById("customerName");
+  els.customerAddress = document.getElementById("customerAddress");
+  els.addressGroup = document.getElementById("addressGroup");
+  els.orderNotes = document.getElementById("orderNotes");
+  els.categoryTabs = document.querySelectorAll(".category-tab");
+}
 
 let revealObserver = null;
 
@@ -306,7 +314,21 @@ function saveCart() {
 function loadCart() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
+    if (!raw) return [];
+
+    const parsed = JSON.parse(raw);
+
+    if (!Array.isArray(parsed)) return [];
+
+    return parsed.filter((item) => {
+      return (
+        item &&
+        Number.isInteger(item.id) &&
+        Number.isFinite(item.quantity) &&
+        item.quantity > 0 &&
+        getProductById(item.id)
+      );
+    });
   } catch (error) {
     return [];
   }
@@ -337,9 +359,11 @@ function loadFormState() {
     const formState = JSON.parse(raw);
 
     if (els.customerName) els.customerName.value = formState.customerName || "";
-    if (els.customerAddress) els.customerAddress.value = formState.customerAddress || "";
+    if (els.customerAddress)
+      els.customerAddress.value = formState.customerAddress || "";
     if (els.orderType) els.orderType.value = formState.orderType || "Delivery";
-    if (els.paymentMethod) els.paymentMethod.value = formState.paymentMethod || "Pix";
+    if (els.paymentMethod)
+      els.paymentMethod.value = formState.paymentMethod || "Pix";
     if (els.changeAmount) els.changeAmount.value = formState.changeAmount || "";
     if (els.orderNotes) els.orderNotes.value = formState.orderNotes || "";
   } catch (error) {
@@ -347,9 +371,27 @@ function loadFormState() {
   }
 }
 
+function escapeXml(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function escapeXml(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function createPlaceholderSvg(title, weight) {
-  const safeTitle = (title || "Maná Peanuts").slice(0, 28);
-  const safeWeight = weight || "";
+  const safeTitle = escapeXml((title || "Maná Peanuts").slice(0, 28));
+  const safeWeight = escapeXml(weight || "");
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="800" height="620" viewBox="0 0 800 620">
       <defs>
@@ -414,7 +456,7 @@ function initRevealObserver() {
         revealObserver.unobserve(entry.target);
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.12 },
   );
 }
 
@@ -772,7 +814,8 @@ function buildWhatsAppMessage() {
   lines.push("Itens do pedido:");
 
   detailedItems.forEach((item, index) => {
-    const lineTotal = item.product.price > 0 ? item.product.price * item.quantity : 0;
+    const lineTotal =
+      item.product.price > 0 ? item.product.price * item.quantity : 0;
 
     if (item.product.price > 0) {
       subtotal += lineTotal;
@@ -780,9 +823,7 @@ function buildWhatsAppMessage() {
       hasConsultPrice = true;
     }
 
-    lines.push(
-      `${index + 1}. ${item.product.name} (${item.product.weight})`
-    );
+    lines.push(`${index + 1}. ${item.product.name} (${item.product.weight})`);
     lines.push(`   Quantidade: ${item.quantity}`);
 
     if (item.product.price > 0) {
@@ -844,6 +885,7 @@ function setupButtons() {
    INIT
 ========================= */
 function init() {
+  cacheElements();
   initRevealObserver();
   loadFormState();
   updateFormVisibility();

@@ -852,8 +852,8 @@ select.input:focus {
 /* ANIMAÇÕES */
 .reveal-up,
 .reveal-scale {
-  opacity: 0;
-  transform: translateY(26px);
+  opacity: 1;
+  transform: none;
   transition: opacity 700ms ease, transform 700ms ease;
 }
 
