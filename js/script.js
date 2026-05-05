@@ -149,7 +149,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "./assets/img/linhagranel/amendoim-crugranel.png",
     description:
       "Produto vendido sob consulta, ideal para revenda e uso industrial.",
   },
@@ -160,7 +160,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "./assets/img/linhagranel/amendoim-cru-banda.png",
     description:
       "Opção para processos, receitas e comercialização em maior volume.",
   },
@@ -171,7 +171,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "/assets/img/linhagranel/amendoim-pacocagranel.png",
     description: "Ideal para doces, recheios e preparações artesanais.",
   },
   {
@@ -181,7 +181,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "/assets/img/linhagranel/amendoim-docegranel.png",
     description: "Versão granel para revenda ou compra em maior quantidade.",
   },
   {
@@ -191,7 +191,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "/assets/img/linhagranel/amendoim-granuladogranel.png",
     description: "Indicado para confeitaria, panificação e produção.",
   },
   {
@@ -201,7 +201,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "/assets/img/linhagranel/amendoim-moidogranel.png",
     description: "Produto sob consulta para uso culinário e comercial.",
   },
   {
@@ -211,7 +211,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "/assets/img/linhagranel/amendoim-torradogranel.png",
     description: "Versão em maior volume para atender pedidos sob demanda.",
   },
   {
@@ -221,7 +221,7 @@ const products = [
     badge: "granel",
     weight: "Granel",
     price: 0,
-    image: "",
+    image: "/assets/img/linhagranel/farinha-amendoim.png",
     description:
       "Opção versátil para receitas, misturas e produção alimentícia.",
   },
