@@ -4,12 +4,7 @@ const STORAGE_KEY = "mana_peanuts_cart_v1";
 const FORM_STORAGE_KEY = "mana_peanuts_form_v1";
 const CURRENCY = "pt-BR";
 
-/*
-  IMPORTANTE:
-  - Troque o WHATSAPP_NUMBER pelo número real.
-  - Troque os preços pelos valores reais.
-  - Troque os caminhos das imagens quando quiser.
-*/
+
 
 const products = [
   // LINHA TRADICIONAL
@@ -84,7 +79,7 @@ const products = [
     badge: "sabores",
     weight: "300g",
     price: 16.9,
-    image: "./assets/img/linhasabor/amendoim-pimenta.png",
+    image: "./assets/img/linhasabor/amendoim-pimenta.jpeg",
     description: "Versão temperada com toque picante e marcante.",
   },
   {
@@ -94,7 +89,7 @@ const products = [
     badge: "sabores",
     weight: "300g",
     price: 16.9,
-    image: "./assets/img/linhasabor/amendoim-bacon.png",
+    image: "./assets/img/linhasabor/amendoim-bacon.jpeg",
     description: "Sabor intenso e defumado, ótimo para petiscos e revenda.",
   },
   {
@@ -104,7 +99,7 @@ const products = [
     badge: "sabores",
     weight: "300g",
     price: 16.9,
-    image: "./assets/img/linhasabor/amendoim-mel.png",
+    image: "./assets/img/linhasabor/amendoim-mel.jpeg",
     description: "Combinação agridoce com perfil de sabor diferenciado.",
   },
   {
@@ -225,6 +220,59 @@ const products = [
     description:
       "Opção versátil para receitas, misturas e produção alimentícia.",
   },
+  // LINHA fitnes
+
+   {
+    id: 21,
+    name: "Pasta de Amendoim",
+    category: "linha-fit",
+    badge: "fitnes",
+    weight: "fitnes",
+    price: 0,
+    image: "/assets/img/linhafit/pasta-amendoim.png",
+    description:
+      "Opção versátil para receitas, misturas e produção alimentícia.",
+  },
+
+  // LINHA kit
+
+  {
+    id: 22,
+    name: "Kit Festa Junina",
+    category: "linha-kit",
+    badge: "kit",
+    weight: "kit",
+    price: 0,
+    image: "/assets/img/linhakit/kit3.jpeg",
+    description:
+      "Kit ideal para 3 pessoas.",
+  },
+
+  {
+    id: 23,
+    name: "Kit Festa Junina",
+    category: "linha-kit",
+    badge: "kit",
+    weight: "kit",
+    price: 0,
+    image: "/assets/img/linhakit/kit7.jpeg",
+    description:
+      "Kit ideal para 5 a 7 pessoas.",
+  },
+
+  {
+    id: 24,
+    name: "Kit Festa Junina",
+    category: "linha-kit",
+    badge: "kit",
+    weight: "kit",
+    price: 0,
+    image: "/assets/img/linhakit/kit7.jpeg",
+    description:
+      "Kit ideal para 10 a 15 pessoas.",
+  },
+
+
 ];
 
 const state = {
