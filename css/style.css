@@ -257,6 +257,13 @@ textarea {
   letter-spacing: 0.02em;
 }
 
+.hero .eyebrow {
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(6px);
+}
+
 .eyebrow,
 .section-tag {
   color: var(--color-primary);
@@ -267,8 +274,34 @@ textarea {
 
 /* HERO */
 .hero {
-  padding: 2rem 0 1rem;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  height: 450px;
 }
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 60%,
+  );
+  pointer-events: none;
+}
+
 
 .hero--compact {
   padding-top: 2rem;
@@ -276,9 +309,11 @@ textarea {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
   align-items: center;
+  text-align: center;
+  gap: 1.5rem;
 }
 
 .hero-copy {
@@ -289,8 +324,10 @@ textarea {
   margin: 1rem 0 0.8rem;
   font-size: clamp(2.3rem, 4vw, 4rem);
   line-height: 0.96;
-  color: var(--color-text-dark);
+  color: #FFFFFF;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
+
 
 
 .hero p,
@@ -303,11 +340,18 @@ textarea {
   color: var(--color-text-soft);
 }
 
+.hero p {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.30);
+  font-weight: 500;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 1.4rem;
+  justify-content: center;
 }
 
 .hero-card {
@@ -316,7 +360,7 @@ textarea {
   padding: 0.9rem;
   border-radius: var(--radius-xl);
   background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(181, 116, 48, 0.18);
+  border: 1px solid rgba(254, 254, 254, 0.18);
   box-shadow: var(--shadow-lg);
 }
 
@@ -374,14 +418,15 @@ textarea {
   box-shadow: 0 16px 32px rgba(129, 80, 30, 0.34);
 }
 
-.btn-secondary {
-  color: #F2E5D7;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(181, 116, 48, 0.22);
+.hero .btn-secondary {
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(8px);
 }
 
-.btn-secondary:hover {
-  background: rgba(181, 116, 48, 0.10);
+.hero .btn-secondary:hover {
+  background: rgba(0, 0, 0, 0.40);
 }
 
 .btn-add {
@@ -964,6 +1009,11 @@ select.input:focus {
   .hero {
     padding-top: 1.5rem;
   }
+
+  .hero .container {
+  position: relative;
+  z-index: 1;
+}
 
   .hero h1 {
     font-size: clamp(2rem, 8vw, 3rem);
