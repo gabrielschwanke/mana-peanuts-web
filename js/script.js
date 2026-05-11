@@ -242,7 +242,7 @@ const products = [
     category: "linha-kit",
     badge: "kit",
     weight: "kit",
-    price: 0,
+    price: 50,
     image: "/assets/img/linhakit/kit3.jpeg",
     description:
       "Kit ideal para 3 pessoas.",
@@ -254,7 +254,7 @@ const products = [
     category: "linha-kit",
     badge: "kit",
     weight: "kit",
-    price: 0,
+    price: 120,
     image: "/assets/img/linhakit/kit7.jpeg",
     description:
       "Kit ideal para 5 a 7 pessoas.",
@@ -266,8 +266,8 @@ const products = [
     category: "linha-kit",
     badge: "kit",
     weight: "kit",
-    price: 0,
-    image: "/assets/img/linhakit/kit7.jpeg",
+    price: 230,
+    image: "/assets/img/linhakit/kit15.jpeg",
     description:
       "Kit ideal para 10 a 15 pessoas.",
   },
