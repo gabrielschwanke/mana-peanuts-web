@@ -122,7 +122,7 @@ const products = [
     badge: "doces",
     weight: "42g",
     price: 4.9,
-    image: "",
+    image: "./assets/img/linhadoce/pe-de-moca2.png",
     description: "Doce prático e saboroso, ideal para consumo rápido.",
   },
   {
@@ -132,7 +132,7 @@ const products = [
     badge: "doces",
     weight: "51g",
     price: 5.9,
-    image: "",
+    image: "./assets/img/linhadoce/torrao.png",
     description: "Doce tradicional com textura firme e sabor artesanal.",
   },
 
