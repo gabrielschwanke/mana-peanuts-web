@@ -26,7 +26,7 @@ const products = [
     badge: "tradicional",
     weight: "300g",
     price: 14.9,
-    image: "./assets/img/linhatradicional/amendoim-doce.png",
+    image: "./assets/img/linhatradicional/amendoim-caramelizado.jpeg",
     description: "Amendoim doce com sabor marcante e textura crocante.",
   },
   {
@@ -109,7 +109,7 @@ const products = [
     badge: "sabores",
     weight: "300g",
     price: 16.9,
-    image: "./assets/img/linhasabor/amendoim-cebola.png",
+    image: "./assets/img/linhasabor/amendoim-cebola.jpeg",
     description:
       "Tempero clássico e equilibrado para quem gosta de sabor suave.",
   },
