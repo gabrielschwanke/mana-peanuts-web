@@ -21,13 +21,13 @@ const products = [
   },
   {
     id: 2,
-    name: "Amendoim Doce",
+    name: "Amendoim Caramelizado",
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "300g",
     price: 14.9,
     image: "./assets/img/linhatradicional/amendoim-caramelizado.jpeg",
-    description: "Amendoim doce com sabor marcante e textura crocante.",
+    description: "Amendoim caramelizado com sabor marcante e textura crocante.",
   },
   {
     id: 3,
