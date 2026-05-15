@@ -26,7 +26,7 @@ const products = [
     badge: "tradicional",
     weight: "300g",
     price: 14.9,
-    image: "./assets/img/linhatradicional/amendoim-caramelizado.jpeg",
+    image: "./assets/img/linhatradicional/amendoim-caramelizaado.jpeg",
     description: "Amendoim caramelizado com sabor marcante e textura crocante.",
   },
   {
