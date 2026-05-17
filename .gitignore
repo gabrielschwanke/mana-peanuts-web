@@ -1,9 +1,4 @@
 # =========================
-# Dependencies
-# =========================
-node_modules/
-
-# =========================
 # Build / Production
 # =========================
 dist/
@@ -17,12 +12,7 @@ coverage/
 .env.*
 !.env.example
 
-# =========================
-# Wrangler / Cloudflare
-# =========================
-.wrangler/
-.dev.vars*
-!.dev.vars.example
+
 
 # =========================
 # VS Code

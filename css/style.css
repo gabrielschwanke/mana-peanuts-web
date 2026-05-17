@@ -355,10 +355,9 @@ textarea {
 
 .hero-copy h1 span {
   background: linear-gradient(135deg, #c9d85e 0%, #82972e 100%);
-
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   text-shadow: none;
 }
 
