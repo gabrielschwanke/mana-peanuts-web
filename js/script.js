@@ -238,36 +238,36 @@ const products = [
 
   {
     id: 22,
-    name: "Kit Festa Junina",
+    name: "Kit Pequeno",
     category: "linha-kit",
     badge: "kit",
-    weight: "kit",
+    weight: "",
     price: 50,
-    image: "/assets/img/linhakit/kit3.jpeg",
+    image: "/assets/img/linhakit/kit3.png",
     description:
       "Kit ideal para 3 pessoas.",
   },
 
   {
     id: 23,
-    name: "Kit Festa Junina",
+    name: "Kit Médio ",
     category: "linha-kit",
     badge: "kit",
-    weight: "kit",
+    weight: "",
     price: 120,
-    image: "/assets/img/linhakit/kit7.jpeg",
+    image: "/assets/img/linhakit/kit7.png",
     description:
       "Kit ideal para 5 a 7 pessoas.",
   },
 
   {
     id: 24,
-    name: "Kit Festa Junina",
+    name: "Kit Grande",
     category: "linha-kit",
     badge: "kit",
-    weight: "kit",
+    weight: "",
     price: 230,
-    image: "/assets/img/linhakit/kit15.jpeg",
+    image: "/assets/img/linhakit/kit15.png",
     description:
       "Kit ideal para 10 a 15 pessoas.",
   },
