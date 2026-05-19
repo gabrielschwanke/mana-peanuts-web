@@ -15,7 +15,7 @@ const products = [
     badge: "tradicional",
     weight: "300g",
     price: 14.9,
-    image: "./assets/img/linhatradicional/amendoim-torrado.png",
+    image: "./assets/img/linhatradicional/amendoim-torrado.jpeg",
     description:
       "Amendoim torrado tradicional da Maná Peanuts, ideal para consumo e revenda.",
   },
@@ -36,7 +36,7 @@ const products = [
     badge: "tradicional",
     weight: "300g",
     price: 15.9,
-    image: "./assets/img/linhatradicional/amendoim-rosa.png",
+    image: "./assets/img/linhatradicional/amendoim-rosa.jpeg",
     description:
       "Versão especial com sal rosa, equilibrando sabor e crocância.",
   },
