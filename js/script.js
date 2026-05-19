@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "55SEUNUMEROAQUI"; // Ex.: 5581999999999
+const WHATSAPP_NUMBER = "5553984168655";
 const DELIVERY_FEE = 0; // Se quiser taxa para Delivery, troque aqui. Ex.: 5
 const STORAGE_KEY = "mana_peanuts_cart_v1";
 const FORM_STORAGE_KEY = "mana_peanuts_form_v1";
@@ -14,7 +14,7 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "300g",
-    price: 14.9,
+    price: 10,
     image: "./assets/img/linhatradicional/amendoim-torrado.jpeg",
     description:
       "Amendoim torrado tradicional da Maná Peanuts, ideal para consumo e revenda.",
@@ -25,7 +25,7 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "300g",
-    price: 14.9,
+    price: 10,
     image: "./assets/img/linhatradicional/amendoim-caramelizado.jpeg",
     description: "Amendoim caramelizado com sabor marcante e textura crocante.",
   },
@@ -35,7 +35,7 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "300g",
-    price: 15.9,
+    price: 10,
     image: "./assets/img/linhatradicional/amendoim-rosa.jpeg",
     description:
       "Versão especial com sal rosa, equilibrando sabor e crocância.",
@@ -46,7 +46,7 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "400g",
-    price: 17.9,
+    price: 10,
     image: "./assets/img/linhatradicional/amendoim-granulado.png",
     description: "Ideal para receitas, coberturas, recheios e uso culinário.",
   },
@@ -56,7 +56,7 @@ const products = [
     category: "linha-tradicional",
     badge: "tradicional",
     weight: "400g",
-    price: 17.9,
+    price: 10,
     image: "./assets/img/linhatradicional/amendoim-moido.png",
     description: "Perfeito para preparos, doces e composições artesanais.",
   },
@@ -68,7 +68,7 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.9,
+    price: 10,
     image: "./assets/img/linhasabor/amendoim-churrasco.png",
     description: "Amendoim crocante com tempero sabor churrasco.",
   },
@@ -78,7 +78,7 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.9,
+    price: 10,
     image: "./assets/img/linhasabor/amendoim-pimenta.jpeg",
     description: "Versão temperada com toque picante e marcante.",
   },
@@ -88,7 +88,7 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.9,
+    price: 10,
     image: "./assets/img/linhasabor/amendoim-bacon.jpeg",
     description: "Sabor intenso e defumado, ótimo para petiscos e revenda.",
   },
@@ -98,7 +98,7 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.9,
+    price: 10,
     image: "./assets/img/linhasabor/amendoim-mel.jpeg",
     description: "Combinação agridoce com perfil de sabor diferenciado.",
   },
@@ -108,7 +108,7 @@ const products = [
     category: "linha-sabores",
     badge: "sabores",
     weight: "300g",
-    price: 16.9,
+    price: 10,
     image: "./assets/img/linhasabor/amendoim-cebola.jpeg",
     description:
       "Tempero clássico e equilibrado para quem gosta de sabor suave.",
