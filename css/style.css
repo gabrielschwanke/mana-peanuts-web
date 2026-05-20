@@ -1052,7 +1052,11 @@ select.input:focus {
 .info-card h3 {
   margin: 0;
   font-size: 1.25rem;
-  color: var(--color-text-dark, #1f1d1a);
+  color: var(--color-primary);
+}
+
+.info-card img {
+  margin-top: -22px;
 }
 
 .info-card__lead {
@@ -1103,17 +1107,6 @@ select.input:focus {
   border: 1.5px solid #83f43c;
 }
 
-.info-card__badge {
-  margin-top: auto;
-  align-self: flex-start;
-  background: #fff4e0;
-  color: #b85e10;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.4rem 0.75rem;
-  border-radius: 999px;
-}
-
 /* ---------- FOOTER ---------- */
 .site-footer {
   margin-top: 4rem;
@@ -1121,11 +1114,14 @@ select.input:focus {
   color: #d6d2cc;
 }
 
+
+
 .site-footer__inner {
   display: grid;
   grid-template-columns: 1.4fr repeat(3, 1fr);
   gap: 2rem;
   padding: 3.5rem 0 2.5rem;
+  align-items: center;
 }
 
 .site-footer h3,
