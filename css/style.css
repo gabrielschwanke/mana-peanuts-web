@@ -927,6 +927,7 @@ select.input:focus {
 }
 
 .product-price {
+  margin-left: auto;
   white-space: nowrap;
   font-size: 1.18rem;
   font-weight: 900;
