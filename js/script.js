@@ -115,40 +115,50 @@ const products = [
   },
 
   // LINHA DOCES
-  {
+{
     id: 11,
-    name: "Pé de Moça Chocolate",
+    name: "Chocomoça Pote",
+    category: "linha-doces",
+    badge: "doces",
+    weight: "20uni",
+    price: 45,
+    image: "./assets/img/linhadoce/pe-de-moca.jpeg",
+    description: "Pote com 20 unidades.",
+  },
+  {
+    id: 12,
+    name: "Pé de Moça Tradicional Pote",
+    category: "linha-doces",
+    badge: "doces",
+    weight: "20uni",
+    price: 41,
+    image: "./assets/img/linhadoce/pe-de-moca-tradicional.png",
+    description: "Pote com 20 unidades.",
+  },
+  {
+    id: 13,
+    name: "Chocomoça",
     category: "linha-doces",
     badge: "doces",
     weight: "42g",
-    price: 4.9,
-    image: "./assets/img/linhadoce/pe-de-moca.jpeg",
+    price: 3,
+    image: "./assets/img/linhadoce/pe-de-mocaun.png",
     description: "Doce prático e saboroso, ideal para consumo rápido.",
   },
   {
-    id: 11,
+    id: 14,
     name: "Pé de Moça Tradicional",
     category: "linha-doces",
     badge: "doces",
     weight: "42g",
-    price: 4.9,
-    image: "./assets/img/linhadoce/pe-de-moca-tradicional.png",
-    description: "Doce prático e saboroso, ideal para consumo rápido.",
-  },
-  {
-    id: 12,
-    name: "Rapadura de Amendoim tipo Torrão",
-    category: "linha-doces",
-    badge: "doces",
-    weight: "51g",
-    price: 5.9,
-    image: "./assets/img/linhadoce/torrao.png",
+    price: 3,
+    image: "./assets/img/linhadoce/pe-democaun.png",
     description: "Doce tradicional com textura firme e sabor artesanal.",
   },
 
   // LINHA GRANEL
   {
-    id: 13,
+    id: 15,
     name: "Amendoim Cru Inteiro",
     category: "linha-granel",
     badge: "kg",
@@ -156,10 +166,10 @@ const products = [
     price: 15,
     image: "./assets/img/linhagranel/amendoim-crugranel.png",
     description:
-      "Produto vendido sob consulta, ideal para revenda e uso industrial.",
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial. ",
   },
   {
-    id: 14,
+    id: 16,
     name: "Amendoim Cru Banda",
     category: "linha-granel",
     badge: "kg",
@@ -167,60 +177,60 @@ const products = [
     price: 15,
     image: "./assets/img/linhagranel/amendoim-cru-banda.png",
     description:
-      "Opção para processos, receitas e comercialização em maior volume.",
+      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   {
-    id: 15,
+    id: 17,
     name: "Amendoim Paçoca",
     category: "linha-granel",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-pacocagranel.png",
-    description: "Ideal para doces, recheios e preparações artesanais.",
+    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   {
-    id: 16,
+    id: 18,
     name: "Amendoim Doce",
     category: "linha-granel",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-docegranel.png",
-    description: "Versão granel para revenda ou compra em maior quantidade.",
+    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   {
-    id: 17,
+    id: 19,
     name: "Amendoim Granulado",
     category: "linha-granel",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-granuladogranel.png",
-    description: "Indicado para confeitaria, panificação e produção.",
+    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   {
-    id: 18,
+    id: 20,
     name: "Amendoim Moído",
     category: "linha-granel",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-moidogranel.png",
-    description: "Produto sob consulta para uso culinário e comercial.",
+    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   {
-    id: 19,
+    id: 21,
     name: "Amendoim Torrado",
     category: "linha-granel",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-torradogranel.png",
-    description: "Versão em maior volume para atender pedidos sob demanda.",
+    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   {
-    id: 20,
+    id: 22,
     name: "Farinha de Amendoim",
     category: "linha-granel",
     badge: "kg",
@@ -228,12 +238,12 @@ const products = [
     price: 15,
     image: "/assets/img/linhagranel/farinha-amendoim.png",
     description:
-      "Opção versátil para receitas, misturas e produção alimentícia.",
+      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   // LINHA fitnes
 
    {
-    id: 21,
+    id: 23,
     name: "Pasta de Amendoim",
     category: "linha-fit",
     badge: "fitnes",
@@ -241,10 +251,10 @@ const products = [
     price: 15,
     image: "/assets/img/linhafit/pasta-amendoim.png",
     description:
-      "Opção versátil para receitas, misturas e produção alimentícia.",
+      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
   {
-    id: 21,
+    id: 24,
     name: "Pasta de Amendoim",
     category: "linha-fit",
     badge: "fitnes",
@@ -252,13 +262,13 @@ const products = [
     price: 15,
     image: "/assets/img/linhafit/pasta-amendoim250.png",
     description:
-      "Opção versátil para receitas, misturas e produção alimentícia.",
+      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
   },
 
   // LINHA kit
 
   {
-    id: 22,
+    id: 25,
     name: "Kit Pequeno",
     category: "linha-kit",
     badge: "kit",
@@ -270,7 +280,7 @@ const products = [
   },
 
   {
-    id: 23,
+    id: 26,
     name: "Kit Médio ",
     category: "linha-kit",
     badge: "kit",
@@ -282,7 +292,7 @@ const products = [
   },
 
   {
-    id: 24,
+    id: 27,
     name: "Kit Grande",
     category: "linha-kit",
     badge: "kit",
@@ -564,6 +574,7 @@ function renderProducts() {
     const addButton = node.querySelector(".btn-add");
 
     node.dataset.category = product.category;
+    node.classList.add(product.category);
     node.style.transitionDelay = `${index * 35}ms`;
 
     const imageSource = product.image?.trim()
