@@ -40,26 +40,6 @@ const products = [
     description:
       "Versão especial com sal rosa, equilibrando sabor e crocância.",
   },
-  {
-    id: 4,
-    name: "Amendoim Granulado",
-    category: "linha-tradicional",
-    badge: "tradicional",
-    weight: "400g",
-    price: 10,
-    image: "./assets/img/linhatradicional/amendoim-granulado.png",
-    description: "Ideal para receitas, coberturas, recheios e uso culinário.",
-  },
-  {
-    id: 5,
-    name: "Amendoim Moído",
-    category: "linha-tradicional",
-    badge: "tradicional",
-    weight: "400g",
-    price: 10,
-    image: "./assets/img/linhatradicional/amendoim-moido.png",
-    description: "Perfeito para preparos, doces e composições artesanais.",
-  },
 
   // LINHA SABORES
   {
