@@ -231,7 +231,7 @@ const products = [
     price: 15,
     image: "/assets/img/linhafit/pasta-amendoim.png",
     description:
-      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+      "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
   },
   {
     id: 24,
@@ -242,7 +242,7 @@ const products = [
     price: 15,
     image: "/assets/img/linhafit/pasta-amendoim250.png",
     description:
-      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+      "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
   },
 
   // LINHA kit
