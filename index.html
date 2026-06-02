@@ -63,16 +63,16 @@
 
     <section class="menu-section" id="cardapio">
       <div class="container">
-        <div class="delivery-notice">
-          <img src="assets/icons/tele.png" alt="Entrega" class="delivery-notice__icon">
-          <span>
-            Taxa de entrega: R$ 7,00 para áreas próximas. Valores podem variar conforme a distância do local de entrega.
-          </span>
+        <div>
+          <h2>Escolha seus produtos</h2>
         </div>
-
         <div class="category-tabs reveal-up delay-1" id="categorias">
 
-          <button class="category-tab active" data-filter="linha-tradicional" type="button">
+          <button class="category-tab active" data-filter="todos" type="button">
+            Todos
+          </button>
+
+          <button class="category-tab" data-filter="linha-tradicional" type="button">
             Linha Tradicional
           </button>
 
@@ -92,12 +92,11 @@
             Linha kit
           </button>
 
-          <button class="category-tab" data-filter="linha-granel" type="button">
+          <button class="category-tab" data-filter="por-kg" type="button">
             Por kg
           </button>
-          
-        </div>
 
+        </div>
         <div class="menu-layout">
           <!-- CARRINHO -->
           <aside class="order-box" id="pedido">
@@ -192,11 +191,7 @@
           <!-- PRODUTOS À DIREITA -->
           <div class="products-panel">
             <div class="products-panel__header">
-              <div>
-                <h2>Escolha seus produtos</h2>
-              </div>
             </div>
-
             <div class="product-grid" id="productGrid"></div>
           </div>
         </div>
@@ -208,10 +203,16 @@
         <div class="section-heading">
           <span class="section-tag">Informações</span>
         </div>
+        <div class="delivery-notice">
+          <img src="assets/icons/tele.png" alt="Entrega" class="delivery-notice__icon">
+          <span>
+            Taxa de entrega: R$ 7,00 para áreas próximas. Valores podem variar conforme a distância do local de entrega.
+          </span>
+        </div>
         <div class="info-grid">
           <article class="info-card">
             <div class="info-card__icon">
-              <img src="assets/icons/mascote.png" alt="" aria-hidden="true" />
+              <img src="assets/icons/logowhats.png" alt="" aria-hidden="true" />
             </div>
             <h3>Fale com a gente</h3>
             <p class="info-card__lead">Atendimento direto pelo WhatsApp</p>

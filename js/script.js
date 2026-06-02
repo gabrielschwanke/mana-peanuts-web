@@ -140,7 +140,7 @@ const products = [
   {
     id: 15,
     name: "Amendoim Cru Inteiro",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
@@ -151,74 +151,74 @@ const products = [
   {
     id: 16,
     name: "Amendoim Cru Banda",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "./assets/img/linhagranel/amendoim-cru-banda.png",
     description:
-      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 17,
     name: "Amendoim Paçoca",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-pacocagranel.png",
-    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 18,
     name: "Amendoim Doce",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-docegranel.png",
-    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 19,
     name: "Amendoim Granulado",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-granuladogranel.png",
-    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 20,
     name: "Amendoim Moído",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-moidogranel.png",
-    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 21,
     name: "Amendoim Torrado",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-torradogranel.png",
-    description: "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 22,
     name: "Farinha de Amendoim",
-    category: "linha-granel",
+    category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/farinha-amendoim.png",
     description:
-      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   // LINHA fitnes
 
@@ -231,7 +231,7 @@ const products = [
     price: 15,
     image: "/assets/img/linhafit/pasta-amendoim.png",
     description:
-      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 24,
@@ -242,7 +242,7 @@ const products = [
     price: 15,
     image: "/assets/img/linhafit/pasta-amendoim250.png",
     description:
-      "Acima de 10kg possui desconto especial. Consulte o valor final no WhatsApp.",
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
 
   // LINHA kit
@@ -287,7 +287,7 @@ const products = [
 ];
 
 const state = {
-  filter: "linha-tradicional",
+  filter: "todos",
   cart: loadCart(),
 };
 
@@ -538,9 +538,13 @@ function renderProducts() {
 
   els.productGrid.innerHTML = "";
 
-  const filteredProducts = products.filter(
-    (product) => product.category === state.filter,
-  );
+  const filteredProducts = products.filter((product) => {
+  if (state.filter === "todos") {
+    return product.category !== "por-kg";
+  }
+
+  return product.category === state.filter;
+});
 
   filteredProducts.forEach((product, index) => {
     const node = els.productTemplate.content.firstElementChild.cloneNode(true);
