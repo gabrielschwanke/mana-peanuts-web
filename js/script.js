@@ -93,6 +93,16 @@ const products = [
     description:
       "Tempero clássico e equilibrado para quem gosta de sabor suave.",
   },
+  {
+    id: 6,
+    name: "Amendoim sabor Mix",
+    category: "linha-sabores",
+    badge: "sabores",
+    weight: "300g",
+    price: 10,
+    image: "./assets/img/linhasabor/mix.jpeg",
+    description: "Amendoim com aquela mistura de sabores.",
+  },
 
   // LINHA DOCES
 {
@@ -160,16 +170,6 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 17,
-    name: "Amendoim Paçoca",
-    category: "por-kg",
-    badge: "kg",
-    weight: "Por kg",
-    price: 15,
-    image: "/assets/img/linhagranel/amendoim-pacocagranel.png",
-    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
-  },
-  {
     id: 18,
     name: "Amendoim Doce",
     category: "por-kg",
@@ -181,12 +181,12 @@ const products = [
   },
   {
     id: 19,
-    name: "Amendoim Granulado",
+    name: "Farinha de Amendoim",
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
-    image: "/assets/img/linhagranel/amendoim-granuladogranel.png",
+    image: "/assets/img/linhagranel/farinha-amendoim.png",
     description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
@@ -211,15 +211,105 @@ const products = [
   },
   {
     id: 22,
-    name: "Farinha de Amendoim",
+    name: "Amendoim Granulado",
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
     price: 15,
-    image: "/assets/img/linhagranel/farinha-amendoim.png",
+    image: "/assets/img/linhagranel/amendoim-granuladogranel.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
+  {
+    id: 23,
+    name: "Amendoim Paçoca",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/pacocakg.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  {
+    id: 23,
+    name: "Amendoim com Sal rosa",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/amendoim-salrosa.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  {
+    id: 23,
+    name: "Amendoim Mix",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/mixkg.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  {
+    id: 23,
+    name: "Amendoim Bacon",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/baconkg.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  {
+    id: 23,
+    name: "Amendoim Pimenta",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/pimentakg.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  {
+    id: 23,
+    name: "Amendoim Churrasco",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/churrascokg.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  {
+    id: 23,
+    name: "Amendoim Cebola e Salsa",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/cebolaesalsakg.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  {
+    id: 23,
+    name: "Amendoim Mostarda e Mel",
+    category: "por-kg",
+    badge: "kg",
+    weight: "Por kg",
+    price: 15,
+    image: "/assets/img/linhagranel/mostardamelkg.png",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+  },
+  
+
   // LINHA fitnes
 
    {
