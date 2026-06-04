@@ -43,7 +43,7 @@ const products = [
 
   // LINHA SABORES
   {
-    id: 6,
+    id: 4,
     name: "Amendoim sabor Churrasco",
     category: "linha-sabores",
     badge: "sabores",
@@ -53,7 +53,7 @@ const products = [
     description: "Amendoim crocante com tempero sabor churrasco.",
   },
   {
-    id: 7,
+    id: 5,
     name: "Amendoim sabor Pimenta",
     category: "linha-sabores",
     badge: "sabores",
@@ -63,7 +63,7 @@ const products = [
     description: "Versão temperada com toque picante e marcante.",
   },
   {
-    id: 8,
+    id: 6,
     name: "Amendoim sabor Bacon",
     category: "linha-sabores",
     badge: "sabores",
@@ -73,7 +73,7 @@ const products = [
     description: "Sabor intenso e defumado, ótimo para petiscos e revenda.",
   },
   {
-    id: 9,
+    id: 7,
     name: "Amendoim sabor Mostarda e Mel",
     category: "linha-sabores",
     badge: "sabores",
@@ -83,7 +83,7 @@ const products = [
     description: "Combinação agridoce com perfil de sabor diferenciado.",
   },
   {
-    id: 10,
+    id: 8,
     name: "Amendoim sabor Cebola & Salsa",
     category: "linha-sabores",
     badge: "sabores",
@@ -94,7 +94,7 @@ const products = [
       "Tempero clássico e equilibrado para quem gosta de sabor suave.",
   },
   {
-    id: 6,
+    id: 9,
     name: "Amendoim sabor Mix",
     category: "linha-sabores",
     badge: "sabores",
@@ -106,7 +106,7 @@ const products = [
 
   // LINHA DOCES
 {
-    id: 11,
+    id: 10,
     name: "Chocomoça Pote",
     category: "linha-doces",
     badge: "doces",
@@ -116,7 +116,7 @@ const products = [
     description: "Pote com 20 unidades.",
   },
   {
-    id: 12,
+    id: 11,
     name: "Pé de Moça Tradicional Pote",
     category: "linha-doces",
     badge: "doces",
@@ -126,7 +126,7 @@ const products = [
     description: "Pote com 20 unidades.",
   },
   {
-    id: 13,
+    id: 12,
     name: "Chocomoça",
     category: "linha-doces",
     badge: "doces",
@@ -136,7 +136,7 @@ const products = [
     description: "Doce prático e saboroso, ideal para consumo rápido.",
   },
   {
-    id: 14,
+    id: 13,
     name: "Pé de Moça Tradicional",
     category: "linha-doces",
     badge: "doces",
@@ -148,7 +148,7 @@ const products = [
 
   // LINHA GRANEL
   {
-    id: 15,
+    id: 14,
     name: "Amendoim Cru Inteiro",
     category: "por-kg",
     badge: "kg",
@@ -159,7 +159,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial. ",
   },
   {
-    id: 16,
+    id: 15,
     name: "Amendoim Cru Banda",
     category: "por-kg",
     badge: "kg",
@@ -170,7 +170,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 18,
+    id: 16,
     name: "Amendoim Doce",
     category: "por-kg",
     badge: "kg",
@@ -180,7 +180,7 @@ const products = [
     description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 19,
+    id: 17,
     name: "Farinha de Amendoim",
     category: "por-kg",
     badge: "kg",
@@ -190,7 +190,7 @@ const products = [
     description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 20,
+    id: 18,
     name: "Amendoim Moído",
     category: "por-kg",
     badge: "kg",
@@ -200,7 +200,7 @@ const products = [
     description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 21,
+    id: 19,
     name: "Amendoim Torrado",
     category: "por-kg",
     badge: "kg",
@@ -210,7 +210,7 @@ const products = [
     description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 22,
+    id: 20,
     name: "Amendoim Granulado",
     category: "por-kg",
     badge: "kg",
@@ -221,7 +221,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 23,
+    id: 21,
     name: "Amendoim Paçoca",
     category: "por-kg",
     badge: "kg",
@@ -232,7 +232,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 23,
+    id: 22,
     name: "Amendoim com Sal rosa",
     category: "por-kg",
     badge: "kg",
@@ -254,7 +254,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 23,
+    id: 24,
     name: "Amendoim Bacon",
     category: "por-kg",
     badge: "kg",
@@ -265,7 +265,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 23,
+    id: 25,
     name: "Amendoim Pimenta",
     category: "por-kg",
     badge: "kg",
@@ -276,7 +276,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 23,
+    id: 26,
     name: "Amendoim Churrasco",
     category: "por-kg",
     badge: "kg",
@@ -287,7 +287,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 23,
+    id: 27,
     name: "Amendoim Cebola e Salsa",
     category: "por-kg",
     badge: "kg",
@@ -298,7 +298,7 @@ const products = [
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
-    id: 23,
+    id: 28,
     name: "Amendoim Mostarda e Mel",
     category: "por-kg",
     badge: "kg",
@@ -313,7 +313,7 @@ const products = [
   // LINHA fitnes
 
    {
-    id: 23,
+    id: 29,
     name: "Pasta de Amendoim",
     category: "linha-fit",
     badge: "fitnes",
@@ -324,7 +324,7 @@ const products = [
       "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
   },
   {
-    id: 24,
+    id: 30,
     name: "Pasta de Amendoim",
     category: "linha-fit",
     badge: "fitnes",
@@ -338,7 +338,7 @@ const products = [
   // LINHA kit
 
   {
-    id: 25,
+    id: 31,
     name: "Kit Pequeno",
     category: "linha-kit",
     badge: "kit",
@@ -350,7 +350,7 @@ const products = [
   },
 
   {
-    id: 26,
+    id: 32,
     name: "Kit Médio ",
     category: "linha-kit",
     badge: "kit",
@@ -362,7 +362,7 @@ const products = [
   },
 
   {
-    id: 27,
+    id: 33,
     name: "Kit Grande",
     category: "linha-kit",
     badge: "kit",
