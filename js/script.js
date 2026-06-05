@@ -153,7 +153,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 13,
     image: "./assets/img/linhagranel/amendoim-crugranel.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial. ",
@@ -164,7 +164,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 11,
     image: "./assets/img/linhagranel/amendoim-cru-banda.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -185,7 +185,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 16,
     image: "/assets/img/linhagranel/farinha-amendoim.png",
     description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
@@ -215,7 +215,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 18,
     image: "/assets/img/linhagranel/amendoim-granuladogranel.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -226,7 +226,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 17,
     image: "/assets/img/linhagranel/pacocakg.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -281,7 +281,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 24,
     image: "/assets/img/linhagranel/churrascokg.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -292,7 +292,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 24,
     image: "/assets/img/linhagranel/cebolaesalsakg.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -303,7 +303,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 24,
     image: "/assets/img/linhagranel/mostardamelkg.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
