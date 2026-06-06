@@ -237,7 +237,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 16,
     image: "/assets/img/linhagranel/amendoim-salrosa.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -248,7 +248,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 24,
     image: "/assets/img/linhagranel/mixkg.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -259,7 +259,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 24,
     image: "/assets/img/linhagranel/baconkg.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
@@ -270,7 +270,7 @@ const products = [
     category: "por-kg",
     badge: "kg",
     weight: "Por kg",
-    price: 15,
+    price: 24,
     image: "/assets/img/linhagranel/pimentakg.png",
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
