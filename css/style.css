@@ -940,6 +940,7 @@ select.input:focus {
   font-size: 0.94rem;
   line-height: 1.5;
   min-height: 48px;
+  white-space: pre-line;
 }
 
 .product-footer {

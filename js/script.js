@@ -4,8 +4,6 @@ const STORAGE_KEY = "mana_peanuts_cart_v1";
 const FORM_STORAGE_KEY = "mana_peanuts_form_v1";
 const CURRENCY = "pt-BR";
 
-
-
 const products = [
   // LINHA TRADICIONAL
   {
@@ -105,7 +103,7 @@ const products = [
   },
 
   // LINHA DOCES
-{
+  {
     id: 10,
     name: "Chocomoça Pote",
     category: "linha-doces",
@@ -177,7 +175,8 @@ const products = [
     weight: "Por kg",
     price: 25,
     image: "/assets/img/linhagranel/amendoim-docegranel.png",
-    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 17,
@@ -187,7 +186,8 @@ const products = [
     weight: "Por kg",
     price: 16,
     image: "/assets/img/linhagranel/farinha-amendoim.png",
-    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 18,
@@ -197,7 +197,8 @@ const products = [
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-moidogranel.png",
-    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 19,
@@ -207,7 +208,8 @@ const products = [
     weight: "Por kg",
     price: 15,
     image: "/assets/img/linhagranel/amendoim-torradogranel.png",
-    description: "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
+    description:
+      "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
   {
     id: 20,
@@ -308,11 +310,10 @@ const products = [
     description:
       "Peça a quantidade ao finalizar o pedido no whatsApp, acima de 10kg possui desconto especial.",
   },
-  
 
   // LINHA fitnes
 
-   {
+  {
     id: 29,
     name: "Pasta de Amendoim",
     category: "linha-fit",
@@ -324,7 +325,7 @@ const products = [
       "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
   },
   {
-    id: 29,
+    id: 30,
     name: "Pasta de Amendoim",
     category: "linha-fit",
     badge: "fitnes",
@@ -335,12 +336,12 @@ const products = [
       "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
   },
   {
-    id: 30,
+    id: 31,
     name: "Pasta de Amendoim",
     category: "linha-fit",
     badge: "fitnes",
     weight: "250g",
-    price: 15,
+    price: 9,
     image: "/assets/img/linhafit/pasta-amendoim250.png",
     description:
       "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
@@ -349,42 +350,60 @@ const products = [
   // LINHA kit
 
   {
-    id: 31,
+    id: 32,
     name: "Kit Pequeno",
     category: "linha-kit",
     badge: "kit",
     weight: "",
     price: 50,
     image: "/assets/img/linhakit/kit3.png",
-    description:
-      "Kit ideal para 3 pessoas.",
+    description: `Kit ideal para 3 pessoas.
+
+✓ 1 Amendoim Torrado 300g
+✓ 1 Amendoim Doce 300g
+✓ 1 Amendoim Japonês 300g
+✓ 3 Rapaduras 45g
+✓ 3 Pé de Moça 45g`,
   },
 
   {
-    id: 32,
+    id: 33,
     name: "Kit Médio ",
     category: "linha-kit",
     badge: "kit",
     weight: "",
     price: 120,
     image: "/assets/img/linhakit/kit7.png",
-    description:
-      "Kit ideal para 5 a 7 pessoas.",
+    description: `Kit ideal para 7 a 10 pessoas.
+
+✓ 1kg Amendoim Torrado Natural
+✓ 1kg Amendoim Caramelizado
+✓ 1kg Amendoim Japonês
+✓ 600g Amendoim Torrado com Casca
+✓ 10 Pés de Moça
+✓ 10 Rapaduras`,
   },
 
   {
-    id: 33,
+    id: 34,
     name: "Kit Grande",
     category: "linha-kit",
     badge: "kit",
     weight: "",
     price: 230,
     image: "/assets/img/linhakit/kit15.png",
-    description:
-      "Kit ideal para 10 a 15 pessoas.",
+    description: `Kit ideal para 10 a 15 pessoas.
+
+✓ 2kg Amendoim Caramelizado
+✓ 1kg Amendoim Japonês Cebola & Salsa
+✓ 1kg Amendoim Japonês Mostarda & Mel
+✓ 300g Amendoim Churrasco
+✓ 300g Amendoim Pimenta
+✓ 600g Amendoim Torrado com Casca
+✓ 1kg Amendoim Torrado Natural
+✓ 1 Pote Pé de Moça com 24 uni
+✓ 1 Pote de Rapaduras com 20 uni`,
   },
-
-
 ];
 
 const state = {
@@ -640,12 +659,12 @@ function renderProducts() {
   els.productGrid.innerHTML = "";
 
   const filteredProducts = products.filter((product) => {
-  if (state.filter === "todos") {
-    return product.category !== "por-kg";
-  }
+    if (state.filter === "todos") {
+      return product.category !== "por-kg";
+    }
 
-  return product.category === state.filter;
-});
+    return product.category === state.filter;
+  });
 
   filteredProducts.forEach((product, index) => {
     const node = els.productTemplate.content.firstElementChild.cloneNode(true);
