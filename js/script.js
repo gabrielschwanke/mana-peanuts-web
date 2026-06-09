@@ -318,8 +318,19 @@ const products = [
     category: "linha-fit",
     badge: "fitnes",
     weight: "1kg",
-    price: 15,
+    price: 22.5,
     image: "/assets/img/linhafit/pasta-amendoim.png",
+    description:
+      "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
+  },
+  {
+    id: 29,
+    name: "Pasta de Amendoim",
+    category: "linha-fit",
+    badge: "fitnes",
+    weight: "500g",
+    price: 15,
+    image: "/assets/img/linhafit/pasta-amendoim500.png",
     description:
       "Pasta de amendoim cremosa, produzida com amendoins selecionados e sabor marcante.",
   },
