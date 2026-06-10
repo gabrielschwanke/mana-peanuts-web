@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5553984168655";
+const WHATSAPP_NUMBER = "5553999009002";
 const DELIVERY_FEE = 7; // Se quiser taxa para Delivery, troque aqui. Ex.: 5
 const STORAGE_KEY = "mana_peanuts_cart_v1";
 const FORM_STORAGE_KEY = "mana_peanuts_form_v1";
