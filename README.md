@@ -10,7 +10,7 @@ A real-world client project developed for Maná Peanuts, featuring a responsive 
 
 ### Home Page
 
-![Home Page](./assets/screenshots/home-desktop.png)
+![Home Page](./assets/screenshots/home-page.png)
 
 ### Product Catalog
 
